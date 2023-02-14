@@ -1,5 +1,6 @@
 import {UserType} from 'types';
-import {RootStateOrAny} from "../index";
+import {RootStateOrAny, RootStoreType} from "../index";
+import {Store} from "redux";
 
 
-export const selectUsers = (state: RootStateOrAny): UserType[] => state.userData.users;
+export const selectUsers = (state: RootStoreType): UserType[] => state.usersData.users;
